@@ -1,0 +1,51 @@
+{
+  "name": "package-timer",
+  "version": "1.0.0",
+  "description": "Package-timer is an NPM package that provides a simple and flexible way to implement a timer functionality into your Node.js project. With this package, you can easily create, start, pause, resume, stop, restart, extend, shorten and get the remaining time of a timer. It can work with any Node.js package that requires a timer functionality. The package is designed to be easy to use and can be customized to fit specific project needs. It is built on top of the Node.js built-in EventEmitter module, which makes it easy to work with and extend. Package-timer provides a Timer class with methods for creating and controlling timers. The Timer class has a start() method that starts the timer with a specified duration. Once started, the timer emits events such as timeout, pause, resume, stop, restart, extend and shorten, depending on the action taken on it. The pause(), resume(), stop(), restart(), extend(), and shorten() methods are used to control the timer. This package is built following NPM best practices and is fully documented. It comes with tests, which ensures that the code is working as expected. It also follows semantic versioning, which means that each release is clearly labeled with version numbers.Overall, the package is simple, flexible, and easy to use, making it an excellent choice for adding timer functionality to any Node.js package.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adesholly/package-timer.git"
+  },
+  "keywords": [
+    "\"timer",
+    "scheduling",
+    "countdown",
+    "deadline",
+    "timeout",
+    "duration",
+    "clock",
+    "delay",
+    "task",
+    "event",
+    "reminder",
+    "alarm",
+    "scheduler",
+    "timekeeping",
+    "time",
+    "management",
+    "productivity",
+    "package",
+    "timer.\""
+  ],
+  "author": "Lateef Ibrahim Abiola (Adesholly)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adesholly/package-timer/issues"
+  },
+  "homepage": "https://github.com/Adesholly/package-timer#readme",
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

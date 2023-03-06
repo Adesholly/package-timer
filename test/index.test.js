@@ -14,7 +14,8 @@ describe('packageTime', () => {
 
 
     afterEach(() => {
-        timer = packageTimer()
+        jest.clearAllTimers()
+        jest.restoreAllMocks()
     })
 
 
@@ -53,8 +54,9 @@ describe('packageTime', () => {
           expect(timer.getRemainingTime()).toBeCloseTo(duration, -1)
         })
       })
+
       
-      //Pause Function Test Use Cases
+      // Pause Function Test Use Cases
 
       describe('pause()', () => {
         test('should pause the timer and return the remaining time', () => {
@@ -114,11 +116,13 @@ describe('packageTime', () => {
       });
 
 
-      //Resume function Test use cases
+      // Resume Function Test Use Cases
+
+
 
       
 
-      //Stop Function Test Use Cases
+      // Stop Function Test Use Cases
     
       describe('stop', () => {
        
@@ -161,7 +165,32 @@ describe('packageTime', () => {
         })
       })
 
+      // Extend Function Test Use Cases
 
+      describe('extend function', () => {    
+
+          test('should not extend timer if it is paused', () => {
+            const duration = 5000
+            timer.start(duration)
+        
+            jest.advanceTimersByTime(1000)
+        
+            timer.pause()
+        
+            const originalRemainingTime = timer.getRemainingTime()
+        
+            timer.extend(3000)
+        
+            const newDuration = timer.getDuration()
+            const newRemainingTime = timer.getRemainingTime()
+        
+            expect(newDuration).toBe(duration)
+            expect(newRemainingTime).toBe(originalRemainingTime)
+          })
+
+
+          
+      })
 
 })
 

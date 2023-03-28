@@ -40,7 +40,7 @@
   "bugs": {
     "url": "https://github.com/Adesholly/package-timer/issues"
   },
-  "homepage": "https://github.com/Adesholly/package-timer#readme",
+  "homepage": "https://github.com/Adesholly/package-timer#README.md",
   "devDependencies": {
     "eslint": "^8.34.0",
     "eslint-config-standard": "^17.0.0",

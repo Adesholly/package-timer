@@ -8,7 +8,7 @@ The packageTimer is a simple Node.js module that can be used to track the durati
 
 + [Usage](https://github.com/Adesholly/package-timer#usage)
 
-+ [Starting](https://github.com/Adesholly/package-timer#starting)
++ [Starting](https://github.com/Adesholly/package-timer#start)
 
 + [Pause](https://github.com/Adesholly/package-timer#pause)
 
@@ -38,7 +38,7 @@ The packageTimer is a simple Node.js module that can be used to track the durati
 
 + [Contributing](https://github.com/Adesholly/package-timer#contributing)
 
-+ [Contacting](https://github.com/Adesholly/package-timer#contracting)
++ [Contact](https://github.com/Adesholly/package-timer#contact)
 
 ## Installation
 
